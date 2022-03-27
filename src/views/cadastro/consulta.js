@@ -20,9 +20,8 @@ export class ConsultaProdutos extends React.Component{
                     <table className="table table-hover">
                         <thead>
                             <tr>
-                                
-                                <th>SKU</th> 
-                                <th>Nome</th>                       
+                                <th>Nome</th> 
+                                <th>SKU</th>                                                       
                                 <th>Preço</th>
                                 <th>Fornecedor</th>
                                 <th>Anexo</th>
@@ -33,9 +32,9 @@ export class ConsultaProdutos extends React.Component{
                         <tbody>
                             {this.state.produtos.map( produto => {
                                 return (
-                                    <tr>                                        
-                                        <th>{produto.sku}</th> 
-                                        <th>{produto.nome}</th>                       
+                                    <tr> 
+                                        <th>{produto.nome}</th>                                       
+                                        <th>{produto.sku}</th>                                                                
                                         <th>{produto.preco}</th>
                                         <th>{produto.fornecedor}</th>
                                         <th>{produto.anexo}</th>

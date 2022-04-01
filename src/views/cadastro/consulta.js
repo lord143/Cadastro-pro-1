@@ -1,4 +1,5 @@
 import React from "react";
+import ProdutoService from '../../app/produtoService'
 
 export class ConsultaProdutos extends React.Component{
 
@@ -6,7 +7,15 @@ export class ConsultaProdutos extends React.Component{
         produtos : []
     }
 
-    
+    constructor(){
+        super()
+        this.service = new ProdutoService();
+    }
+
+    componentDidMount(){
+        const produtos = this.service.obterProdutos();
+        this.setState({produtos})
+    }
 
     render(){
         return(

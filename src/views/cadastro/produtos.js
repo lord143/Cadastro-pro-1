@@ -151,7 +151,7 @@ class CadastroProduto extends React.Component{
                     </div>
                     
                     <div className='row'>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label class="col-md-4 control-label" for="arquivo">Anexo</label>
                             <div class="col-md-4">
                                 <input id="arquivo" 

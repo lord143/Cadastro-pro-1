@@ -1,5 +1,6 @@
 import React from "react";
 import ProdutoService from '../../app/produtoService'
+import {withRouter} from 'react-router-dom'
 
 export class ConsultaProdutos extends React.Component{
 
@@ -15,6 +16,11 @@ export class ConsultaProdutos extends React.Component{
     componentDidMount(){
         const produtos = this.service.obterProdutos();
         this.setState({produtos})
+    }
+
+    preparaEditar = (sku) => {
+        console.log('sku para editar:',sku)
+        this.props.history.push(`/cadastro-produtos/${sku}`)
     }
 
     render(){
@@ -39,15 +45,18 @@ export class ConsultaProdutos extends React.Component{
 
                         </thead>
                         <tbody>
-                            {this.state.produtos.map( produto => {
+                            {this.state.produtos.map( (produto, index) => {
                                 return (
-                                    <tr> 
+                                    <tr key={index}> 
                                         <th>{produto.nome}</th>                                       
                                         <th>{produto.sku}</th>                                                                
                                         <th>{produto.preco}</th>
                                         <th>{produto.fornecedor}</th>
                                         <th>{produto.anexo}</th>
-                                        <th></th>
+                                        <th>
+                                            <button onClick={() => this.preparaEditar(produto.sku)} className="btn btn-primary">Editar</button>
+                                            <button className="btn btn-danger">Remover</button>
+                                        </th>
                                     </tr>
                                 )
 
@@ -62,4 +71,4 @@ export class ConsultaProdutos extends React.Component{
     }
 }
 
-export default ConsultaProdutos;
+export default withRouter(ConsultaProdutos);

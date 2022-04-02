@@ -15,7 +15,7 @@ function Rotas() {
                 <link to='/cadastro-consulta'></link>
             </div>
             <Switch>
-                <Route exact path="/cadastro-produtos" component={CadastroProduto}/>
+                <Route exact path="/cadastro-produtos/:sku?" component={CadastroProduto}/>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/consulta-produtos" component={ConsultaProdutos}/>
             </Switch>

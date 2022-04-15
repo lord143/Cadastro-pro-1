@@ -2,7 +2,7 @@ import React from "react";
 import ProdutoService from '../../app/produtoService'
 import {withRouter} from 'react-router-dom'
 
-export class ConsultaProdutos extends React.Component{
+class ConsultaProdutos extends React.Component{
 
     state = {
         produtos : []

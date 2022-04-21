@@ -22,10 +22,10 @@ class ConsultaProdutos extends React.Component{
         console.log('sku para editar:',sku)
         this.props.history.push(`/cadastro-produtos/${sku}`)
     }
-
+    //*refatorar metodo deletar*//
     deletar = (sku) => {
-       const produtos = this.service.deletar(sku)
-       this.setState({produtos})
+       const produtos = this.service.deletar(sku);
+       this.setState({ produtos })
     }
 
     render(){

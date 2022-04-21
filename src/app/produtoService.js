@@ -37,7 +37,7 @@ export default class ProdutoService{
         return JSON.parse(produtos)
     }
     obterIndex = (sku) => {
-        let index= null; 
+        let index = null; 
         this.obterProdutos().forEach((produto, i)=>{
             if(produto.sku === sku){
                 index = i;

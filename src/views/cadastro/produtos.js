@@ -17,6 +17,7 @@ const estadoInicial = {
 
 }
 
+
 class CadastroProduto extends React.Component{
     state = estadoInicial
 
@@ -164,6 +165,26 @@ class CadastroProduto extends React.Component{
                             
                                     
                         </div>
+                            <br>
+                            
+                            </br>
+                        <div>
+                            <label>Setor: </label>
+                            <br>
+                            </br>
+                            <br>
+                            </br>
+                            <select>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option selected value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+
+                        </div>
+
+                        <br>
+                        </br>                      
                         
                         <div className='row'>
                             <div className="form-group">
@@ -173,6 +194,7 @@ class CadastroProduto extends React.Component{
                                             name="arquivo"  
                                             className='input-file' 
                                             type="file"
+                                            accept='application/pdf'
                                             value={this.state.anexo}
                                             onChange={this.onChange} 
                                             

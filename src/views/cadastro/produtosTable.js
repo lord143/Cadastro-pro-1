@@ -9,6 +9,7 @@ export default (props) => (
                     <th>SKU</th>                                                       
                     <th>Preço</th>
                     <th>Fornecedor</th>
+                    <th>Setor</th>
                     <th>Anexo</th>
                     <th>Ações</th>
                 </tr>
@@ -22,6 +23,7 @@ export default (props) => (
                             <th>{produto.sku}</th>                                                                
                             <th>{produto.preco}</th>
                             <th>{produto.fornecedor}</th>
+                            <th>{produto.Setor}</th>
                             <th>{produto.anexo}</th>
                             <th>
                                 <button onClick={() => props.editarAction(produto.sku)} 

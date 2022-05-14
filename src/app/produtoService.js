@@ -45,7 +45,6 @@ export default class ProdutoService{
         })
         return index;
     }
-
     deletar = (sku) => {
        const index = this.obterIndex(sku)
        if(index !== null){
@@ -53,9 +52,7 @@ export default class ProdutoService{
            produtos.splice(index, 1)
            localStorage.setItem(PRODUTOS,JSON.stringify(produtos) )
            return produtos
-
        }
-
     }
     salvar = (produto) =>{
         this.validar(produto)

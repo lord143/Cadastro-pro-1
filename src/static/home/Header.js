@@ -1,7 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
@@ -11,8 +10,7 @@ function Header(props) {
 
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider'}}>
-        <Button size="small" href='/'>Produtos</Button>
+      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider'}}>        
         <Typography 
           component="h2" 
           variant="h5" 
@@ -22,22 +20,7 @@ function Header(props) {
           {title}
         </Typography>
         <IconButton>          
-        </IconButton>
-        <Button 
-          variant="outlined" 
-          size="small"
-          sx={{marginRight: 1, fontSize: 11}}
-          href='/login'>          
-            Sign In          
-        </Button>
-
-        <Button 
-          variant="outlined" 
-          size="small"
-          sx={{fontSize: 10}}
-          href='/register'>          
-            Sign Up                   
-        </Button>      
+        </IconButton>        
       </Toolbar>
       <Toolbar
         component="nav"

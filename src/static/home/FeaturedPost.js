@@ -25,7 +25,7 @@ function FeaturedPost(props) {
               {post.description}
             </Typography>
             <Typography variant="subtitle1" color="primary">
-              Dê uma olhada no seu futuro...
+              Bora dá uma espiada???
             </Typography>
           </CardContent>
           <CardMedia

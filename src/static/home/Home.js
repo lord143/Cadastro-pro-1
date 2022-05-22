@@ -11,37 +11,37 @@ import Footer from './Footer';
 
 
 const sections = [
-  { title: 'Trator', url: '#' },
-  { title: 'Implementos', url: '#' },
-  { title: 'Plantadeiras', url: '#' },
-  { title: 'Gado', url: '#' },
-  { title: 'Colheitadeira', url: '#' },
+  { title: 'Sobre mim ', url: '#' },
+  { title: 'Formação', url: '#' },
+  { title: 'Experiência', url: '#' },
+  { title: 'Formação Complementar', url: '#' },
+  { title: 'Repositorios', url: '#' },
+  {title: 'Contato', url: '#'},
+  
  
 ];
 
 const mainFeaturedPost = {  
   description:
-    "Produtor Forte.",
-  image: 'https://www.cnabrasil.org.br/assets/images/noticias/gado-2.jpg',
+    "DEV em Progresso.",
+  image: 'https://www.tevec.com.br/wp-content/uploads/2020/12/TEVEC-0023_blog02_header_201701204_01.png',
   imageText: 'main image description',
   linkText: 'Continue reading…',
 };
 
 const featuredPosts = [
   {
-    title: 'Força',
-    date: 'Nov 12',
+    title: 'Experiência',    
     description:
-      'Realizando os seus sonhos...',
-    image: 'https://www.revistaplaneta.com.br/wp-content/uploads/sites/3/2021/04/casamento-istock.jpg',
+      'Trajetoria Profissional!!',
+    image: 'http://www.desafiorh.com.br/blog/wp-content/uploads/2019/09/experiencia-usuario-ok.jpg',
     imageLabel: 'Image Text',
   },
   {
-    title: 'Trabalho',
-    date: 'Nov 11',
+    title: 'Repositórios',    
     description:
-      'Realizando seus desejos de uma vida...',
-    image: 'https://static.wixstatic.com/media/fd65b5_ee1b1c605cb5491687571c4f35db693a~mv2.jpeg/v1/fill/w_560,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/fd65b5_ee1b1c605cb5491687571c4f35db693a~mv2.jpeg',
+      'Projetos em produção e feitos!!!',
+    image: 'https://www.solucionex.com/sites/default/files/posts/imagen/git.jpg',
     imageLabel: 'Image Text',
   },
 ];
@@ -52,7 +52,7 @@ export default function Home() {
     <ThemeProvider theme={theme}>
      <CssBaseline />
       <Container maxWidth="lg" >     
-        <Header title="Grupo LMA" sections={sections} />
+        <Header title="Lucas Martins Arruda" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -66,8 +66,8 @@ export default function Home() {
         </main>
       </Container>
       <Footer
-        title="NoivApp"
-        description="Realize seus Sonhos!"
+        title="Lucas Martins Arruda"
+        description="Contato: (61) 99298-2212/ (61) 99693-5671"
       />
     </ThemeProvider>
   );
